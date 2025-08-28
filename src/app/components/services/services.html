@@ -1,0 +1,17 @@
+<section class="services-wrapper">
+    <div class="container">
+        <div class="services-header">
+            <h2 class="services-title">Our Services</h2>
+            <div class="services-subtitle">Discover Our Dental Care Services</div>
+        </div>
+        <div class="services-grid">
+            @for (service of services; track service) {
+            <div class="service-card">
+                <img [src]="service.imageUrl" [alt]="service.title" class="service-image">
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.subtitle }}</p>
+            </div>
+            }
+        </div>
+    </div>
+</section>

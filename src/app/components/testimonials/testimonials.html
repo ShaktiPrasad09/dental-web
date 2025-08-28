@@ -1,0 +1,14 @@
+<section class="testimonials-section">
+    <div class="testimonials-header">
+        <h2 class="testimonials-title">Patient Stories</h2>
+        <div class="testimonials-subtitle">Real Experiences, Real Impact</div>
+    </div>
+    <div class="testimonials-list">
+        @for (t of testimonials; track t) {
+        <div class="testimonial-card">
+            <div class="testimonial-name">{{ t.author }}</div>
+            <div class="testimonial-text">{{ t.quote }}</div>
+        </div>
+        }
+    </div>
+</section>

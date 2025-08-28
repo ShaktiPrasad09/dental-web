@@ -1,0 +1,47 @@
+<section class="benefits-section">
+    <div class="benefits-header">
+        <h2 class="benefits-title">Benefits</h2>
+        <div class="benefits-subtitle">Why Choose Dr. Mally Dental</div>
+        <p class="benefits-desc">
+            At Dr. Mally Dental, we prioritize patient well-being and offer personalized treatment plans to meet
+            individual needs. Our team of skilled professionals ensures your comfort and safety at all times, providing
+            reliable and compassionate support.
+        </p>
+        <div class="benefits-icon">
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Left Column - Features List -->
+            <div class="features-column">
+                @for (feature of features; track feature) {
+                <div class="feature-item" [class.active]="selectedFeatureIndex === $index"
+                    (click)="selectFeature($index)">
+                    <h3 class="feature-title">{{ feature.title }}</h3>
+                    <div class="feature-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                }
+            </div>
+            <!-- Right Column - Feature Card or Online Consultation -->
+            <div class="consultation-column" *ngIf="selectedFeatureIndex !== null">
+                <div class="feature-card-horizontal">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img [src]="features[selectedFeatureIndex].image"
+                                [alt]="features[selectedFeatureIndex].title" />
+                        </div>
+                    </div>
+                    <div class="feature-content-horizontal">
+                        <h3 class="feature-card-title">{{ features[selectedFeatureIndex].title }}</h3>
+                        <p class="feature-card-desc">{{ features[selectedFeatureIndex].description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

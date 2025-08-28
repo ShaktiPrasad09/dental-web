@@ -1,0 +1,110 @@
+.team-section {
+    background: #dedecb;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.team-header {
+    max-width: 600px;
+    padding: 48px 0 0 56px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.team-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #363624;
+    margin-bottom: 16px;
+}
+
+.team-subtitle {
+    font-size: 2rem;
+    color: #44443c;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.team-desc {
+    font-size: 1.1rem;
+    color: #44443c;
+    margin-bottom: 0;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+.team-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -120px;
+    padding-right: 56px;
+}
+
+.team-card-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.team-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    display: block;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-content-horizontal {
+    margin-top: 18px;
+    max-width: 260px;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #44443c;
+}
+
+@media (max-width: 900px) {
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-top: 32px;
+        padding-right: 0;
+    }
+
+    .team-header {
+        padding: 32px 0 0 16px;
+    }
+}

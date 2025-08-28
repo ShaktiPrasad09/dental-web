@@ -1,0 +1,19 @@
+<div class="about-container">
+    <div class="about-left">
+        <h1>About Dr. Shakti</h1>
+        <h2>Passionate about Your Smile</h2>
+        <p>
+            At Dr. Shakti's Dental Clinic, we are committed to delivering exceptional cosmetic dentistry services
+            tailored to
+            enhance your smile. Our experienced team of professionals provides compassionate and reliable care to ensure
+            your comfort and confidence.
+        </p>
+    </div>
+    <div class="about-right">
+        <div class="about-photo-grid">
+            @for (img of aboutImages; track img.src) {
+            <img [src]="img.src" [alt]="img.alt" class="about-photo animated-photo" />
+            }
+        </div>
+    </div>
+</div>

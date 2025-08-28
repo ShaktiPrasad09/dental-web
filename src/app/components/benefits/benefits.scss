@@ -1,0 +1,354 @@
+// Horizontal feature card layout
+.feature-card-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.feature-image {
+    width: 100%;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+    display: block;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-content-horizontal {
+    margin-top: 18px;
+    max-width: 380px;
+    text-align: center;
+}
+
+.feature-card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c5f5d;
+    margin-bottom: 12px;
+}
+
+.feature-card-desc {
+    font-size: 1rem;
+    color: #44443c;
+}
+
+.consultation-column {
+    max-width: 380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-content {
+    padding: 24px 20px 28px 20px;
+    text-align: center;
+}
+
+.benefits-header {
+    max-width: 700px;
+    padding: 80px 0 0 80px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.benefits-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #363624;
+    margin-bottom: 16px;
+}
+
+.benefits-subtitle {
+    font-size: 2rem;
+    color: #44443c;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.benefits-desc {
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #44443c;
+    margin-bottom: 0;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.benefits-section {
+    background: #dedecb;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.benefits-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2c5f5d;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.section-title-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2c5f5d;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* Left Column - Features */
+.features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    padding-left: 16px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c5f5d;
+    margin: 0;
+}
+
+.feature-arrow {
+    color: #2c5f5d;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover .feature-arrow {
+    transform: translateX(8px);
+}
+
+/* Right Column - Online Consultation */
+.consultation-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.consultation-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.consultation-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.consultation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.consultation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 95, 93, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.consultation-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.consultation-features {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.consultation-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.consultation-feature:hover {
+    transform: translateX(8px);
+}
+
+.consultation-feature-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c5f5d;
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+    margin-right: 16px;
+}
+
+.consultation-arrow {
+    color: #2c5f5d;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.consultation-feature:hover .consultation-arrow {
+    transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .consultation-column {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .section-title,
+    .section-title-secondary {
+        font-size: 2.5rem;
+    }
+
+    .content-wrapper {
+        gap: 40px;
+    }
+
+    .consultation-features {
+        padding: 24px 20px;
+    }
+
+    .consultation-feature-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-title,
+    .section-title-secondary {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+    }
+
+    .consultation-title {
+        font-size: 2rem;
+    }
+
+    .consultation-image {
+        height: 250px;
+    }
+}

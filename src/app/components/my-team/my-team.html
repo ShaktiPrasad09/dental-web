@@ -1,0 +1,26 @@
+<section class="team-section">
+    <div class="team-header">
+        <h2 class="team-title">Meet Our Team</h2>
+        <div class="team-subtitle">Committed to Your Smile</div>
+        <p class="team-desc">
+            Our dedicated team at Dr. Mally Dental consists of skilled and compassionate professionals who are committed
+            to providing the highest quality of care to our patients. Each member of our team undergoes rigorous
+            training and brings a wealth of experience to ensure the well-being and confidence of those we serve.
+        </p>
+    </div>
+    <div class="team-list">
+        @for (member of team; track member) {
+        <div class="team-card-horizontal">
+            <div class="team-card">
+                <div class="team-image">
+                    <img [src]="member.image" [alt]="member.name" />
+                </div>
+            </div>
+            <div class="team-content-horizontal">
+                <div class="team-name">{{ member.name }}</div>
+                <div class="team-role">{{ member.role }}</div>
+            </div>
+        </div>
+        }
+    </div>
+</section>

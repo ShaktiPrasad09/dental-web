@@ -1,0 +1,74 @@
+.testimonials-section {
+    background: #f6f4ea;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonials-header {
+    max-width: 600px;
+    padding: 48px 0 0 56px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.testimonials-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #363624;
+    margin-bottom: 16px;
+}
+
+.testimonials-subtitle {
+    font-size: 2rem;
+    color: #44443c;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+
+.testimonials-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 120px;
+}
+
+.testimonial-card {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-name {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #363624;
+    margin-bottom: 18px;
+}
+
+.testimonial-text {
+    font-family: "Kalam", cursive !important;
+    font-size: 1.1rem;
+    color: #44443c;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .testimonials-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .testimonials-header {
+        padding: 32px 0 0 16px;
+    }
+}
