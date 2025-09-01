@@ -13,17 +13,17 @@ export class MyTeamComponent {
         {
             name: 'Dr. Mally Dental',
             role: 'Dentist',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         },
         {
             name: 'Dr. Alex Yardo',
             role: 'Cosmetic Dentist',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         },
         {
             name: 'Dr. Michael Smith',
             role: 'Restorative Dentist',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         }
     ];
 }
