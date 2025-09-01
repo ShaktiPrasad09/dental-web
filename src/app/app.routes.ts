@@ -5,6 +5,7 @@ import { ServicesComponent } from './components/services/services';
 import { BenefitsComponent } from './components/benefits/benefits';
 import { MyTeamComponent } from './components/my-team/my-team';
 import { TestimonialsComponent } from './components/testimonials/testimonials';
+import { ContactComponent } from './components/contact/contact';
 
 export const routes: Routes = [
     {
@@ -39,8 +40,8 @@ export const routes: Routes = [
     },
     {
         path: 'contact',
-        redirectTo: '/',
-        pathMatch: 'full'
+        component: ContactComponent,
+        title: 'Dental Hero - Contact'
     },
     // Fallback route for all other paths
     { path: '**', redirectTo: '' }
