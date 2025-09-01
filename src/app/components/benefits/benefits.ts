@@ -14,22 +14,22 @@ export class BenefitsComponent {
         {
             title: 'Compassionate Care',
             description: 'Our team of skilled professionals provides comprehensive dental care with years of experience and expertise.',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         },
         {
             title: 'State Of the Art Technology',
             description: 'We utilize cutting-edge dental technology and modern equipment for precise and effective treatments.',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         },
         {
             title: 'Professional Team',
             description: 'Flexible payment options and insurance plans to make quality dental care accessible to everyone.',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         },
         {
             title: 'Personalized Approach',
             description: 'Our dedicated team works closely with you to create tailored treatment plans that suit your unique needs.',
-            image: '/hero.JPG'
+            image: 'assets/hero.JPG'
         }
     ];
 
