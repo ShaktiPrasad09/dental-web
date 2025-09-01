@@ -1,0 +1,131 @@
+.contact-section {
+    background: #f6f4ea;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-container {
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    gap: 64px;
+    padding: 56px 64px;
+    max-width: 900px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 260px;
+    padding-right: 32px;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c5f5d;
+    margin-bottom: 18px;
+}
+
+.contact-info p {
+    color: #44443c;
+    margin-bottom: 32px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 1.08rem;
+    color: #363624;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+.contact-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #dedecb;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #363624;
+    transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2c5f5d;
+    outline: none;
+}
+
+.contact-form button {
+    background: #2c5f5d;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: #1e3d3c;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 16px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        align-items: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100vw;
+        max-width: 90vw;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: -16px;
+    }
+
+    .contact-form button {
+        display: block;
+        margin: 18px auto 0 auto;
+        width: 80vw;
+        max-width: 320px;
+    }
+}
